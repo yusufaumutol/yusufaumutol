@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banka Bilgileri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="notification">
+            Hesapların Tümü Valilik Onaylı Hesaptır.<br>
+            FAALİYET NO: 47.2024.1987 (Asuman Örnek)
+        </div>
+
+        <h1>YURT İÇİ HESAPLARIMIZ</h1>
+
+        <div class="card ziraat-tl" data-bank="ziraat">
+            <img src="https://i.hizliresim.com/d3qf1ik.png" alt="Ziraat Bankası">
+            <h2>Ziraat Bankası</h2>
+            <div class="currency">  Para Birimi: TL (₺) </div>
+            <p>ASUMAN ÖRNEK</p>
+            <p>IBAN: TR520001000451817701935001</p>
+            <p>Açıklama: YUSUF ÖRNEK</p>
+            <div class="copy-btn" onclick="copyToClipboard('TR520001000451817701935001')">KOPYALA</div>
+        </div>
+
+        <div class="card ziraat-dolar" data-bank="ziraat">
+            <img src="https://i.hizliresim.com/d3qf1ik.png" alt="Ziraat Bankası">
+            <h2>Ziraat Bankası</h2>
+            <div class="currency">  Para Birimi: DOLAR ($)</div>
+            <p>ASUMAN ÖRNEK</p>
+            <p>IBAN: TR250001000451817701935002</p>
+            <p>Açıklama: YUSUF ÖRNEK</p>
+            <div class="copy-btn" onclick="copyToClipboard('TR250001000451817701935002')">KOPYALA</div>
+        </div>
+
+        <div class="card ziraat-euro" data-bank="ziraat">
+            <img src="https://i.hizliresim.com/d3qf1ik.png" alt="Ziraat Bankası">
+            <h2>Ziraat Bankası</h2>
+            <div class="currency">  Para Birimi: EURO (€)</div>
+            <p>ASUMAN ÖRNEK</p>
+            <p>IBAN: TR410001000451817701935005</p>
+            <p>Açıklama: YUSUF ÖRNEK</p>
+            <div class="copy-btn" onclick="copyToClipboard('TR410001000451817701935005')">KOPYALA</div>
+        </div>
+
+        <h1>YURT DIŞI HESAPLARIMIZ</h1>
+
+        <div class="card banking-circle" data-bank="banking-circle">
+            <img src="https://www.thepower50.com/bankingcircle-logo-primary-blk-rgb-3/" alt="Banking Circle S.A.">
+            <h2>Avrupa Hesabı</h2>
+            <p>Banking Circle S.A.</p>
+            <p>IBAN: LU714080000026902964</p>
+            <p>BIC: BCIRLULL</p>
+            <p>Açıklama: Yusufa</p>
+            <div class="copy-btn" onclick="copyToClipboard('LU714080000026902964')">KOPYALA</div>
+        </div>
+
+        <div class="card shopier" data-bank="shopier">
+            <img src="https://images.seeklogo.com/logo-png/53/1/shopier-logo-png_seeklogo-534207.png" alt="Shopier">
+            <h2>Shopier</h2>
+            <p>Kredi kartı ile shopier mağazasından bağış yapabilirsiniz</p>
+            <a class="copy-btn" href="https://shopier.com/yusufaumutol" target="_blank">GİT</a>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">Kopyalandı!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

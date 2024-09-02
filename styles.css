@@ -1,0 +1,200 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.notification {
+    background-color: #d30b11;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    border-left: 5px solid;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 135px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.9;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.copy-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copy-btn:hover {
+    transform: scale(1.05);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.popup.show {
+    display: block;
+    animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .currency {
+        font-size: 16px;
+    }
+
+    .copy-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Özel Kart Renkleri */
+.ziraat-tl {
+    border-color: #d30b11;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.ziraat-tl .currency, .ziraat-tl .copy-btn {
+    background-color: #d30b11;
+}
+
+.ziraat-dolar {
+    border-color: #d30b11;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.ziraat-dolar .currency, .ziraat-dolar .copy-btn {
+    background-color: #d30b11;
+}
+
+.ziraat-euro {
+    border-color: #d30b11;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.ziraat-euro .currency, .ziraat-euro .copy-btn {
+    background-color: #d30b11;
+}
+
+.banking-circle {
+    border-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.banking-circle .currency, .banking-circle .copy-btn {
+    background-color: #000000;
+}
+
+.shopier {
+    border-color: #6700ff;
+    background-color: #ffffff;
+    color: #6700ff;
+}
+
+.shopier .currency, .shopier .copy-btn {
+    background-color: #6700ff;
+    color: #ffffff;
+}
+
+.shopier .copy-btn {
+    background-color: #6700ff;
+    color: #ffffff;
+}
