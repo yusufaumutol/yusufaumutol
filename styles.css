@@ -198,3 +198,19 @@ h1 {
     background-color: #6700ff;
     color: #ffffff;
 }
+
+.paypal {
+    border-color: #0071e1;
+    background-color: #ffffff;
+    color: #0071e1;
+}
+
+.paypal .currency, .paypal .copy-btn {
+    background-color: #0071e1;
+    color: #ffffff;
+}
+
+.paypal .copy-btn {
+    background-color: #1a7fe4;
+    color: #ffffff;
+}
